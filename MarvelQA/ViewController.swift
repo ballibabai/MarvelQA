@@ -8,12 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var questionsLabel: UILabel!
+    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet var buttons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        questionsLabel.text = "I am trying something"
     }
 
-
+    @IBAction func answerButtons(_ sender: UIButton) {
+        
+        
+    }
+    
 }
 
