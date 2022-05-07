@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        questionsLabel.text = "I am trying something"
+        questionsLabel.text = "I am trying new something"
     }
 
     @IBAction func answerButtons(_ sender: UIButton) {
