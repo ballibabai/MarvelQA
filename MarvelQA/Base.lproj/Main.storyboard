@@ -22,7 +22,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WzL-Zu-k8N" userLabel="Label">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="248"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vf-3z-CIT">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWh-qE-ITG">
+                                                <rect key="frame" x="27" y="52" width="44.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Questions Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vf-3z-CIT">
                                                 <rect key="frame" x="5" y="222.5" width="136" height="25.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                 <nil key="textColor"/>
@@ -31,6 +37,10 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="2vf-3z-CIT" firstAttribute="top" secondItem="GWh-qE-ITG" secondAttribute="bottom" constant="149.5" id="N8t-1N-ohq"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GWh-qE-ITG" secondAttribute="trailing" constant="20" symbolic="YES" id="cam-vs-VwW"/>
+                                            <constraint firstItem="GWh-qE-ITG" firstAttribute="top" secondItem="WzL-Zu-k8N" secondAttribute="top" constant="52" id="fSP-UF-Een"/>
+                                            <constraint firstItem="GWh-qE-ITG" firstAttribute="leading" secondItem="WzL-Zu-k8N" secondAttribute="leading" constant="27" id="kMn-NS-W8z"/>
                                             <constraint firstItem="2vf-3z-CIT" firstAttribute="leading" secondItem="WzL-Zu-k8N" secondAttribute="leading" constant="5" id="ncJ-tP-G7w"/>
                                             <constraint firstAttribute="bottom" secondItem="2vf-3z-CIT" secondAttribute="bottom" id="ufK-5l-Ece"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2vf-3z-CIT" secondAttribute="trailing" constant="20" symbolic="YES" id="yG0-K0-JBi"/>
@@ -109,6 +119,7 @@
                     <connections>
                         <outlet property="progressBar" destination="D8O-vM-mWb" id="eVt-1a-3bf"/>
                         <outlet property="questionsLabel" destination="2vf-3z-CIT" id="nz6-dT-Czl"/>
+                        <outlet property="scoreLabel" destination="GWh-qE-ITG" id="49q-mS-Guo"/>
                         <outletCollection property="buttons" destination="tZp-Pz-K1t" collectionClass="NSMutableArray" id="mgj-X6-Xb3"/>
                         <outletCollection property="buttons" destination="J3L-5r-JdF" collectionClass="NSMutableArray" id="GPT-4i-pPv"/>
                         <outletCollection property="buttons" destination="7BZ-JH-891" collectionClass="NSMutableArray" id="rRa-WN-mny"/>

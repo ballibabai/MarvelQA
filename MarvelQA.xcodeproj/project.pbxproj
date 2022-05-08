@@ -13,6 +13,7 @@
 		1ECAD601282707BE00D70BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAD5FF282707BE00D70BF0 /* Main.storyboard */; };
 		1ECAD603282707C000D70BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAD602282707C000D70BF0 /* Assets.xcassets */; };
 		1ECAD606282707C000D70BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAD604282707C000D70BF0 /* LaunchScreen.storyboard */; };
+		1EFE550B28285324001AF640 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE550A28285324001AF640 /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1ECAD602282707C000D70BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ECAD605282707C000D70BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ECAD607282707C000D70BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EFE550A28285324001AF640 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		1ECAD5F8282707BE00D70BF0 /* MarvelQA */ = {
 			isa = PBXGroup;
 			children = (
+				1EFE550A28285324001AF640 /* QuizBrain.swift */,
 				1ECAD5F9282707BE00D70BF0 /* AppDelegate.swift */,
 				1ECAD5FB282707BE00D70BF0 /* SceneDelegate.swift */,
 				1ECAD5FD282707BE00D70BF0 /* ViewController.swift */,
@@ -141,6 +144,7 @@
 				1ECAD5FE282707BE00D70BF0 /* ViewController.swift in Sources */,
 				1ECAD5FA282707BE00D70BF0 /* AppDelegate.swift in Sources */,
 				1ECAD5FC282707BE00D70BF0 /* SceneDelegate.swift in Sources */,
+				1EFE550B28285324001AF640 /* QuizBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
