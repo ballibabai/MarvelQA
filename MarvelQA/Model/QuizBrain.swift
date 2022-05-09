@@ -62,7 +62,11 @@ struct QuizBrain {
         }
     }
     
-    mutating func checkAnswer(userAnswer: String) -> Bool{
+    
+    // - external paramethers affect in the viewController -let userGotItRight-
+    //when we call the func use the external parameth.
+    // we use internal parameth. inside the func...
+    mutating func checkAnswer(_ userAnswer: String) -> Bool{
         if userAnswer == quiz[questionNumber].correctAnswer{
             score += 1
             return true
