@@ -49,41 +49,48 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OtY-Ah-Lrw" userLabel="buttons">
                                         <rect key="frame" x="0.0" y="256" width="414" height="369"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3L-5r-JdF">
-                                                <rect key="frame" x="167" y="246" width="80.5" height="31"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Answer2"/>
-                                                <connections>
-                                                    <action selector="answerButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JAm-hN-zqO"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BZ-JH-891">
-                                                <rect key="frame" x="165" y="339" width="80.5" height="31"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Answer3"/>
-                                                <connections>
-                                                    <action selector="answerButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWB-qX-ItY"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZp-Pz-K1t">
-                                                <rect key="frame" x="169" y="170" width="78.5" height="31"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Answer1"/>
-                                                <connections>
-                                                    <action selector="answerButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oL8-VQ-jdG"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="MnI-B9-qSE">
+                                                <rect key="frame" x="169" y="170" width="80.5" height="191"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZp-Pz-K1t">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Answer1"/>
+                                                        <connections>
+                                                            <action selector="answerButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oL8-VQ-jdG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3L-5r-JdF">
+                                                        <rect key="frame" x="0.0" y="80" width="80.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Answer2"/>
+                                                        <connections>
+                                                            <action selector="answerButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JAm-hN-zqO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BZ-JH-891">
+                                                        <rect key="frame" x="0.0" y="160" width="80.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Answer3"/>
+                                                        <connections>
+                                                            <action selector="answerButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWB-qX-ItY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="7BZ-JH-891" firstAttribute="top" secondItem="J3L-5r-JdF" secondAttribute="bottom" constant="49" id="AMh-Tr-L4t"/>
+                                                    <constraint firstItem="tZp-Pz-K1t" firstAttribute="top" secondItem="MnI-B9-qSE" secondAttribute="top" id="GPz-3g-rbG"/>
+                                                    <constraint firstItem="7BZ-JH-891" firstAttribute="top" secondItem="J3L-5r-JdF" secondAttribute="bottom" constant="49" id="O5a-ij-Kw9"/>
+                                                    <constraint firstItem="J3L-5r-JdF" firstAttribute="top" secondItem="tZp-Pz-K1t" secondAttribute="bottom" constant="49" id="aVE-PU-87y"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7BZ-JH-891" secondAttribute="bottom" id="u4v-Wo-UZP"/>
+                                                    <constraint firstItem="J3L-5r-JdF" firstAttribute="top" secondItem="tZp-Pz-K1t" secondAttribute="bottom" constant="49" id="wx4-Lu-kxL"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="tZp-Pz-K1t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OtY-Ah-Lrw" secondAttribute="leading" constant="20" symbolic="YES" id="06J-7T-wqd"/>
-                                            <constraint firstItem="J3L-5r-JdF" firstAttribute="trailing" secondItem="tZp-Pz-K1t" secondAttribute="trailing" id="4vb-K0-ZT6"/>
-                                            <constraint firstAttribute="bottom" secondItem="7BZ-JH-891" secondAttribute="bottom" constant="-1" id="Fh1-vQ-JPt"/>
-                                            <constraint firstItem="7BZ-JH-891" firstAttribute="leading" secondItem="OtY-Ah-Lrw" secondAttribute="leading" constant="165" id="Jas-xd-tEm"/>
-                                            <constraint firstItem="J3L-5r-JdF" firstAttribute="top" secondItem="tZp-Pz-K1t" secondAttribute="bottom" constant="45" id="Oik-ol-VUB"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7BZ-JH-891" secondAttribute="trailing" constant="20" symbolic="YES" id="SNJ-CA-P1M"/>
-                                            <constraint firstItem="J3L-5r-JdF" firstAttribute="centerX" secondItem="OtY-Ah-Lrw" secondAttribute="centerX" id="TMF-tP-c3F"/>
-                                            <constraint firstItem="7BZ-JH-891" firstAttribute="top" secondItem="J3L-5r-JdF" secondAttribute="bottom" constant="62" id="z67-57-xxU"/>
+                                            <constraint firstItem="MnI-B9-qSE" firstAttribute="leading" secondItem="OtY-Ah-Lrw" secondAttribute="leading" constant="169" id="vAB-ns-48W"/>
+                                            <constraint firstItem="MnI-B9-qSE" firstAttribute="bottom" secondItem="OtY-Ah-Lrw" secondAttribute="bottomMargin" id="zLS-TG-vAJ"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwP-fJ-I5P" userLabel="pView">
