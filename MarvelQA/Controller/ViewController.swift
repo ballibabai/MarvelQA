@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         
         let userAnswer = sender.currentTitle!
         
+        //we use external parameth. when we call the func
         let userGotItRight = quizBrain.checkAnswer(userAnswer)
         
         if userGotItRight == true {
