@@ -32,10 +32,10 @@ struct QuizBrain {
     
     let quiz = [
         Question(text: "Marvel Sinematik Evreni'ni başlatan ilk Iron Man filmi hangi yıl çıkarıldı?", answer: ["2005", "2008", "2007"], correctAnswer: "2008"),
-            Question(text: "Marvel Sinematik Evreni'ni başlatan ilk Iron Man filmi hangi yıl çıkarıldı?", answer: ["2005", "2008", "2007"], correctAnswer: "2008"),
-            Question(text: "Marvel Sinematik Evreni'ni başlatan ilk Iron Man filmi hangi yıl çıkarıldı?", answer: ["2005", "2008", "2007"], correctAnswer: "2008"),
-            Question(text: "Marvel Sinematik Evreni'ni başlatan ilk Iron Man filmi hangi yıl çıkarıldı?", answer: ["2005", "2008", "2007"], correctAnswer: "2008"),
-            Question(text: "Marvel Sinematik Evreni'ni başlatan ilk Iron Man filmi hangi yıl çıkarıldı?", answer: ["2005", "2008", "2007"], correctAnswer: "2008")
+            Question(text: "Thor'un çekicinin adı nedir?", answer: ["Vanir", "Mjolnir", "Norn"], correctAnswer: "Mjolnir"),
+            Question(text: "İnanılmaz Hulk'ta Tony, filmin sonunda Thaddeus Ross'a ne anlatıyor?", answer: ["Hulk okumak istediğini", "Bir ekibi bir araya getirdiklerini", "SHIELD hakkında bildiği"], correctAnswer: "Bir ekibi bir araya getirdiklerini"),
+            Question(text: "Kaptan Amerika'nın kalkanı neyden yapılmıştır?", answer: ["Vibranyum", "Promethium", "Karbonadium"], correctAnswer: "Vibranyum"),
+            Question(text: "Flerkenler neye benzeyen son derece tehlikeli uzaylılardan oluşan bir ırktır?", answer: ["Sürüngenler", "Rakunlar", "Kediler"], correctAnswer: "Kediler")
     
     ]
     
